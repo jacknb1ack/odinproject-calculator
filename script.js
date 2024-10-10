@@ -90,7 +90,8 @@ function operate(operator, num1, num2) {
       result = num1 * num2;
       break;
     case "divide":
-      result = num1 / num2;
+      tempResult = num1 / num2;
+      result = tempResult.toFixed(2);
   }
   return result;
 }
