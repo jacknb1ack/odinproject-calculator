@@ -52,6 +52,20 @@ document.addEventListener("click", function (e) {
 });
 
 document.addEventListener("click", function (e) {
+  const target = e.target.closest("#backspace");
+  if (target) {
+    if (temp == "0" || temp == "" || temp == 0 || temp.length == 1) {
+      temp = "";
+      display.textContent = 0;
+    } else {
+      temp = temp.slice(0, -1);
+
+      display.textContent = temp;
+    }
+  }
+});
+
+document.addEventListener("click", function (e) {
   const target = e.target.closest("#return");
   if (target) {
     secondNumber = temp;
