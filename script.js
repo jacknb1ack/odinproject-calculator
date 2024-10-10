@@ -1,8 +1,8 @@
 const display = document.querySelector(".bottom-display");
 const topDisplay = document.querySelector(".top-display");
 
-let firstNumber = "";
-let secondNumber = "";
+let firstNumber = "0";
+let secondNumber = "0";
 let operator = "";
 let result = "";
 let temp = "";
@@ -20,11 +20,21 @@ document.addEventListener("click", function (e) {
   const target = e.target.closest("button.operator");
 
   if (target) {
-    firstNumber = temp;
-    temp = "";
-    operator = target.getAttribute("id");
-    display.textContent = target.textContent;
-    topDisplay.textContent = firstNumber;
+    if (firstNumber !== "0") {
+      secondNumber = temp;
+      temp = "";
+      result = operate(operator, parseInt(firstNumber), parseInt(secondNumber));
+      firstNumber = result;
+      operator = target.getAttribute("id");
+      topDisplay.textContent = firstNumber;
+      display.textContent = target.textContent;
+    } else {
+      firstNumber = temp;
+      temp = "";
+      operator = target.getAttribute("id");
+      display.textContent = target.textContent;
+      topDisplay.textContent = firstNumber;
+    }
   }
 });
 
@@ -49,6 +59,7 @@ document.addEventListener("click", function (e) {
     display.textContent = result;
     topDisplay.textContent = 0;
     temp = result;
+    firstNumber = "0";
   }
 });
 
