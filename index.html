@@ -10,30 +10,33 @@
   </head>
   <body>
     <div class="calculator">
-      <div class="display">0</div>
+      <div class="display">
+        <div class="top-display">0</div>
+        <div class="bottom-display">0</div>
+      </div>
       <div class="buttons">
         <div class="top">
           <div class="button"><button class="square bg-darkgrey" id="clear">C</button></div>
-          <div class="button"><button class="square bg-darkgrey" id="divide">÷</button></div>
-          <div class="button"><button class="square bg-darkgrey" id="multiply">x</button></div>
+          <div class="button"><button class="square bg-darkgrey operator" id="divide">÷</button></div>
+          <div class="button"><button class="square bg-darkgrey operator" id="multiply">x</button></div>
           <div class="button"><button class="square bg-darkgrey" id="backspace">⌫</button></div>
-          <div class="button"><button class="square" id="seven">7</button></div>
-          <div class="button"><button class="square" id="eight">8</button></div>
-          <div class="button"><button class="square" id="nine">9</button></div>
-          <div class="button"><button class="square bg-darkgrey" id="substract">-</button></div>
-          <div class="button"><button class="square" id="four">4</button></div>
-          <div class="button"><button class="square" id="five">5</button></div>
-          <div class="button"><button class="square" id="six">6</button></div>
-          <div class="button"><button class="square bg-darkgrey" id="add">+</button></div>
+          <div class="button"><button class="square numbers" id="seven">7</button></div>
+          <div class="button"><button class="square numbers" id="eight">8</button></div>
+          <div class="button"><button class="square numbers" id="nine">9</button></div>
+          <div class="button"><button class="square bg-darkgrey operator" id="substract">-</button></div>
+          <div class="button"><button class="square numbers" id="four">4</button></div>
+          <div class="button"><button class="square numbers" id="five">5</button></div>
+          <div class="button"><button class="square numbers" id="six">6</button></div>
+          <div class="button"><button class="square bg-darkgrey operator" id="add">+</button></div>
         </div>
         <div class="bottom">
           <div class="bottom-left">
-            <div class="button"><button class="square" id="one">1</button></div>
-            <div class="button"><button class="square" id="two">2</button></div>
-            <div class="button"><button class="square" id="three">3</button></div>
+            <div class="button"><button class="square numbers" id="one">1</button></div>
+            <div class="button"><button class="square numbers" id="two">2</button></div>
+            <div class="button"><button class="square numbers" id="three">3</button></div>
 
-            <div class="button"><button class="" id="zero">0</button></div>
-            <div class="button"><button class="square" id="dot">.</button></div>
+            <div class="button"><button class="numbers" id="zero">0</button></div>
+            <div class="button"><button class="numbers square" id="dot">.</button></div>
           </div>
           <div class="bottom-right">
             <div class="button"><button class="bg-darkgrey" id="return">=</button></div>

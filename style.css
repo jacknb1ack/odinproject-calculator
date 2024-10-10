@@ -29,13 +29,27 @@ body {
   color: white;
   border-radius: 5px;
   border: 2px solid rgba(0, 0, 0, 0.096);
-  height: 90px;
-  padding: 5px 10px;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.top-display {
+  display: flex;
   align-items: center;
+  justify-content: flex-end;
+  padding: 5px 10px;
+  font-size: 16px;
+  height: 18px;
+}
+
+.bottom-display {
+  height: 90px;
   font-size: 45px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 
 /* button style */
@@ -99,18 +113,6 @@ button {
 .bg-darkgrey {
   background-color: rgb(110, 110, 110);
   color: rgb(55, 182, 255);
-}
-
-.big-font {
-  font-size: 20px;
-}
-
-.md-font {
-  font-size: 16px;
-}
-
-.flex1 {
-  flex: 1;
 }
 
 button:hover {
